@@ -1,0 +1,49 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o admirSystem.o CustomerFunc.o dlist.o screenOut.o SystemFunc.o VideoFunc.o CustomerSystem.o
+LINKOBJ  = main.o admirSystem.o CustomerFunc.o dlist.o screenOut.o SystemFunc.o VideoFunc.o CustomerSystem.o
+LIBS     = -L"D:/새 폴더 (13)/Dev-Cpp/MinGW64/lib" -L"D:/새 폴더 (13)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/include" -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/include" -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/새 폴더 (13)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
+
+admirSystem.o: admirSystem.c
+	$(CC) -c admirSystem.c -o admirSystem.o $(CFLAGS)
+
+CustomerFunc.o: CustomerFunc.c
+	$(CC) -c CustomerFunc.c -o CustomerFunc.o $(CFLAGS)
+
+dlist.o: dlist.c
+	$(CC) -c dlist.c -o dlist.o $(CFLAGS)
+
+screenOut.o: screenOut.c
+	$(CC) -c screenOut.c -o screenOut.o $(CFLAGS)
+
+SystemFunc.o: SystemFunc.c
+	$(CC) -c SystemFunc.c -o SystemFunc.o $(CFLAGS)
+
+VideoFunc.o: VideoFunc.c
+	$(CC) -c VideoFunc.c -o VideoFunc.o $(CFLAGS)
+
+CustomerSystem.o: CustomerSystem.c
+	$(CC) -c CustomerSystem.c -o CustomerSystem.o $(CFLAGS)
