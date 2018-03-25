@@ -1,21 +1,11 @@
-/* Name: screenOut.c  ver 1.0
- * Content: 콘솔 출력을 위한 함수 정의
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
+
 
 #include "common.h"
 #include "Customer.h"
 #include "Video.h"
 #include "dlist.h"
-/* 함    수: void ShowMenu(void)
- * 기    능: 선택을 위한 메뉴 출력. 
- * 반    환: void.
- *
- */
- 
- //고객관련
+
+
  
 void print_Login(void)
 {

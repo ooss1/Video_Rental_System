@@ -1,9 +1,4 @@
-/* Name: main.c  ver 1.0
- * Content: main ÇÔ¼ö.
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
+
 
 #include "common.h"
 #include "dlist.h"

@@ -1,9 +1,3 @@
-/* Name: phoneFunc.c  ver 1.0
- * Content: 전화번호 컨트롤 함수.
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
 
 #include "common.h"
 #include "Customer.h"

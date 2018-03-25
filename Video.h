@@ -1,9 +1,4 @@
-/* Name: phoneData.h  ver 1.0
- * Content: 구조체 phoneData의 선언 및 정의.
- * Implementation: YSW
- * 
- * Last modified 2008/01/01
- */
+
 
 #ifndef __Video_H__
 #define __Video_H__
